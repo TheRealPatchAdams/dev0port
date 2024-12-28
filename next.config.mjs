@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      turboMode: false, // Disable Turbopack if needed
-    },
-  };
-  
-  export default nextConfig;
-  
+  reactStrictMode: true, // Enables React strict mode for catching errors
+};
+
+export default nextConfig;
