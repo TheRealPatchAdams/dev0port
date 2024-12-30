@@ -4,7 +4,11 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        oldeEnglish: ['"UnifrakturMaguntia"', 'cursive'], // Adds Olde English font
+      },
+    },
   },
   plugins: [],
 };

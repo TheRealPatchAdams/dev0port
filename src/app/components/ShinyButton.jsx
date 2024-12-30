@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ShinyButton = () => {
   return (
-    <a href="#projects" className="inline-block">
+    <a href="oneslice" className="inline-block">
       <motion.button
         initial={{ "--x": "200%", scale: 1 }}
         animate={{ "--x": "-100%" }}

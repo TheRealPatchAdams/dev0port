@@ -80,3 +80,13 @@ html {
   mask-composite: exclude;
   -webkit-mask-composite: xor;
 }
+.active-link {
+  color: #60a5fa; /* Tailwind's blue-400 */
+  font-weight: bold;
+}
+:focus {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
