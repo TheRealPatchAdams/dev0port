@@ -1,36 +1,17 @@
 "use client";
 
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import ShinyButton from "./components/ShinyButton";
+import { signIn } from "next-auth/react";
 
-export default function HomePage() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
+const LoginPage = () => {
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="h-screen bg-gradient-to-r from-red-900 to-orange-900 text-white flex flex-col items-center justify-center">
-        <h1
-          className="text-6xl font-extrabold mb-4 select-none focus:outline-none"
-          tabIndex={-1} // Prevent focus
-          contentEditable={false} // Ensure it's not editable
-        >
-          "Oh, hi Mark!"
-        </h1>
-        <ShinyButton />
-      </section>
+    <div className="h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold mb-6">"Oh, hi Mark."</h1>
+      <p className="text-lg mb-6">Join the club</p>
+
+      {/* Meta (Facebook) Login Button */}
+   
     </div>
   );
-}
+};
+
+export default LoginPage;

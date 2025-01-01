@@ -1,7 +1,9 @@
+// src/app/layout.js
+
 import "./globals.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer"; // Import the Footer component
-import Head from "next/head"; // Import Next.js Head for <head> modifications
+import Footer from "./components/Footer";
+import Head from "next/head";
 
 export const metadata = {
   title: "Div It Like It’s Hot",
@@ -20,8 +22,8 @@ export default function RootLayout({ children }) {
       </Head>
       <body className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
         <Header />
-        <main className="flex-grow">{children}</main> {/* Pushes footer to bottom */}
-        <Footer /> {/* Global footer */}
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
